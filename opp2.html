@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Butikk Nettsted</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            color: #333;
+        }
+
+        header {
+            background-color: orange;
+            padding: 20px;
+            text-align: center;
+        }
+
+        main {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .products {
+            display: flex;
+            flex-direction: column;
+            width: 60%;
+        }
+
+        .product {
+            background-color: #ffe0b2;
+            margin: 10px;
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        .order-form {
+            width: 30%;
+            background-color: #ffe0b2;
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: orange;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Velkommen til FRUITIES</h1>
+    </header>
+
+    <main>
+        <section class="products">
+            <h2>Produkter</h2>
+            <div class="product">
+                <img src="lime.jpg" alt="Produkt 1" class="product-image">
+                <h3>Limes</h3>
+                <p>34kr/kg</p>
+                <button>Bestill</button>
+            </div>
+            <div class="product">
+                <img src="blackGrapes.jpg" alt="Produkt 2" class="product-image">
+                <h3>Grapes</h3>
+                <p>46kr/box</p>
+                <button>Bestill</button>
+            </div>
+            <div class="product">
+                <img src="oranges.jpg" alt="Produkt 3" class="product-image">
+                <h3>oranges</h3>
+                <p>19kr/kg</p>
+                <button>Bestill</button>
+            </div>
+            <div class="product">
+                <img src="pumpkins.jpg" alt="Produkt 4" class="product-image">
+                <h3>pumpkins</h3>
+                <p>10.9kr/kg</p>
+                <button>Bestill</button>
+            </div>
+            <div class="product">
+                <img src="strawberry.jpg" alt="Produkt 5" class="product-image">
+                <h3>strawberries</h3>
+                <p>strawberries 8kr/hg</p>
+                <button>Bestill</button>
+            </div>
+        </section>
+
+        <section class="order-form">
+            <h2>Bestillingsskjema</h2>
+            <form action="https://formsubmit.co/YOUR_EMAIL" method="POST">
+                <label for="name">Navn:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">E-post:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="product">Valgt Produkt:</label>
+                <input type="text" id="product" name="product" required>
+                
+                <button type="submit">Send Bestilling</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Butikkens beliggenhet: Eksempelgate 1, Oslo</p>
+        <p>Kontakt: kontakt@butikk.no</p>
+    </footer>
+</body>
+</html>
